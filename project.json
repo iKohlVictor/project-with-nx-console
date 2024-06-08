@@ -1,0 +1,24 @@
+{
+  "name": "template-nestjs-with-nxconsole",
+  "$schema": "node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "template-nestjs-with-nxconsole:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "template-nestjs-with-nxconsole:build:development"
+        },
+        "production": {
+          "buildTarget": "template-nestjs-with-nxconsole:build:production"
+        }
+      }
+    }
+  }
+}
